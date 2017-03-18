@@ -1,0 +1,40 @@
+    <div class="container">
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title text-center"> <strong> YESTERDAY'S' THREEWAY RUN </strong></div>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group" *ngFor="let t_run of t_runs">
+                    <li class="list-group-item"> {{t_run.time}} {{t_run.match}} <span class="pull-right">{{t_run.result}}</span> </li>
+                </ul>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title text-center"><strong> YESTERDAY'S' BTTS RUN </strong></div>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group" *ngFor="let b_run of b_runs">
+                    <li class="list-group-item"> {{b_run.time}} {{b_run.match}} <span class="pull-right">{{b_run.result}}</span> </li>
+                </ul>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title text-center"><strong>YESTERDAY'S' OVER 2.5 RUN</strong> </div>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group" *ngFor="let o_run of o_runs">
+                    <li class="list-group-item"> {{o_run.time}} {{o_run.match}} <span class="pull-right">{{o_run.result}}</span> </li>
+                </ul>                               
+            </div>
+        </div>
+    </div>
+    </div>
